@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="icon" href="./images/favicon.png">
+  <title>Notes App | Take notes and never forget</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="header__title">Notes App</h1>
+      <h3 class="header__subtitle">Take notes and never forget</h3>
+    </div>
+  </header>
+  <main class="actions">
+    <div class="actions__container">
+      <input type="text" name="filterNotes" id="filter-notes" placeholder=" Search Notes" class="input">
+      <select name="sortBy" id="sort-by" class="dropdown">
+        <option value="byEdited">Sort by last edited</option>
+        <option value="byCreated">Sort by recently created</option>
+        <option value="alphabetically">Sort alphabetically</option>
+      </select>
+    </div>
+  </main>
+  <section class="container">
+    <div class="canvas"></div>
+    <button id="new-note" class="button">New Note</button>
+    <small></small>
+  </section>
+  <script src="./notesrandomid.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+  <script src="./notesapp-functions.js"></script>
+  <script src="./notes-app.js"></script>
+</body>
+</html>

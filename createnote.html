@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="icon" href="./images/favicon.png">
+  <title>Notes App | Take notes and never forget</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="header__title">Notes App</h1>
+      <h3 class="header__subtitle">Take notes and never forget</h3>
+    </div>
+  </header>
+  <div class="actions">
+    <div class="actions__container actions__container--spaced">
+      <a id="home"> Home</a>
+      <div class="last-edited "></div>
+    </div>
+    <div class="container">
+      
+    </div>
+  </div>
+
+  <div class="container">
+    <input type="text" name="noteTitle" id="note-title" placeholder=" Enter note title" class="title-input">
+
+    <textarea name="noteBody" id="note-body" cols="30" rows="10" placeholder=" Enter text" class="body-input"></textarea>
+
+    <button id="remove-note" class="button button--secondary">Remove note</button>
+  </div>
+
+  <script src="./notesrandomid.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+  <script src="./notesapp-functions.js"></script>
+  <script src="./createnote.js"></script>
+</body>
+</html>
